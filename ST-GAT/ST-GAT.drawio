@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-08T10:18:43.096Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="lfrHqi2ndvZg3sGsmZwn" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-08T10:27:43.550Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="JVbutgKcXmTN43a_pgxt" version="24.6.4" type="github">
   <diagram name="第 1 页" id="Zd0etjl_I8bW61ZrmcNX">
-    <mxGraphModel dx="753" dy="329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="920" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -196,6 +196,12 @@
         </UserObject>
         <mxCell id="9vRhIa1qv2cYuEfk3MII-61" value="torch.reshape(output, (-1, args.seg_num * args.prediction_step, 1))" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="860" y="1010" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9vRhIa1qv2cYuEfk3MII-62" value="计算节点连接矩阵 node_cons 和上下文权重 context_weight 的外积，并对应求和，得到加权后的权重矩阵 cwpl_weights。同时，计算节点连接矩阵和上下文偏置 context_bias 的矩阵乘法，得到偏置项 cwpl_bias。" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="140" width="560" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9vRhIa1qv2cYuEfk3MII-63" value="torch.from_numpy(mask_(args.seg_num, args.input_time))" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="430" width="350" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
