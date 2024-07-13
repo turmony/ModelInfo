@@ -1,9 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2024-07-13T02:01:20.924Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" version="24.6.5" etag="PllxMJsggTFJ5DxAVUYd" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-13T08:06:50.709Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="ygPFYr4sb82wlOIKY2Lm" version="24.6.5" type="github">
   <diagram name="第 1 页" id="P28lDwWULhQPTfgYWZut">
-    <mxGraphModel>
+    <mxGraphModel dx="710" dy="1479" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="AWZAqQgQGWzGxksC17hS-1" value="x(3814,35,1024,2)&lt;div&gt;2是入流量和出流量&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="30" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-2" value="y(3814,1,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="90" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-3" value="his=35 不是连续的&lt;div&gt;pred=&lt;/div&gt;&lt;div&gt;batch=20&lt;/div&gt;&lt;div&gt;nodes=1024&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-150" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-4" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="140" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-5" value="view1(20,35,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-6" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AWZAqQgQGWzGxksC17hS-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="138" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-7" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+          <mxGeometry x="480" y="75" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-12" value="self.encoder(view1, graph)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="100" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-13" value="repr1(20,1,1024,64)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="140" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-14" value="s_sim_mx = self.fetch_spatial_sim()&lt;div&gt;（1024，1024）空间相似性矩阵&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="135" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-15" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="135" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AWZAqQgQGWzGxksC17hS-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-16" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+          <mxGeometry x="750" y="175" width="220" height="25" as="geometry" />
+        </mxCell>
+        <UserObject label="aug_topology(s_sim_mx, graph, percent=self.args.percent*2)&lt;div&gt;graph2 表示经过拓扑增强后的图结构，使用空间相似性矩阵 s_sim_mx 和原始图结构 graph 来生成的&lt;br&gt;&lt;/div&gt;" id="AWZAqQgQGWzGxksC17hS-18">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="870" y="200" width="360" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-19" value="graph2（1024，1024）" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="270" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-20" value="t_sim_mx = self.fetch_temporal_sim()&lt;div&gt;（33，20，1024）&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="270" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AWZAqQgQGWzGxksC17hS-21" value="view1(20,35,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="270" width="120" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
