@@ -1,68 +1,165 @@
-<mxfile host="app.diagrams.net" modified="2024-07-13T08:06:50.709Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="ygPFYr4sb82wlOIKY2Lm" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-14T02:15:48.386Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="sBEvaZ3gLYRo2MMklpr4" version="24.6.5" type="github">
   <diagram name="第 1 页" id="P28lDwWULhQPTfgYWZut">
-    <mxGraphModel dx="710" dy="1479" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1035" dy="1622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="AWZAqQgQGWzGxksC17hS-1" value="x(3814,35,1024,2)&lt;div&gt;2是入流量和出流量&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-1" value="x(3814,35,1024,2)&lt;div&gt;2是入流量和出流量&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="140" y="30" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-2" value="y(3814,1,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-2" value="y(3814,1,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="140" y="90" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-3" value="his=35 不是连续的&lt;div&gt;pred=&lt;/div&gt;&lt;div&gt;batch=20&lt;/div&gt;&lt;div&gt;nodes=1024&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-3" value="his=35 不是连续的&lt;div&gt;pred=&lt;/div&gt;&lt;div&gt;batch=20&lt;/div&gt;&lt;div&gt;nodes=1024&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="-150" width="140" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-4" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-4" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="140" y="140" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-5" value="view1(20,35,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-5" value="view1(20,35,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="414" y="50" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-6" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-6" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="560" y="50" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AWZAqQgQGWzGxksC17hS-7">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AWZAqQgQGWzGxksC17hS-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="540" y="138" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-7" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-7" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" parent="1" vertex="1">
           <mxGeometry x="480" y="75" width="120" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-12" value="self.encoder(view1, graph)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-12" value="self.encoder(view1, graph)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="100" width="170" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-13" value="repr1(20,1,1024,64)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-13" value="repr1(20,1,1024,64)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="140" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-14" value="s_sim_mx = self.fetch_spatial_sim()&lt;div&gt;（1024，1024）空间相似性矩阵&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-14" value="s_sim_mx = self.fetch_spatial_sim()&lt;div&gt;（1024，1024）空间相似性矩阵&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="670" y="135" width="220" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-15" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-15" value="graph(1024,1024)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="900" y="135" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AWZAqQgQGWzGxksC17hS-16">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AWZAqQgQGWzGxksC17hS-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="860" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-16" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-16" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" parent="1" vertex="1">
           <mxGeometry x="750" y="175" width="220" height="25" as="geometry" />
         </mxCell>
         <UserObject label="aug_topology(s_sim_mx, graph, percent=self.args.percent*2)&lt;div&gt;graph2 表示经过拓扑增强后的图结构，使用空间相似性矩阵 s_sim_mx 和原始图结构 graph 来生成的&lt;br&gt;&lt;/div&gt;" id="AWZAqQgQGWzGxksC17hS-18">
-          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxCell style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
             <mxGeometry x="870" y="200" width="360" height="70" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-19" value="graph2（1024，1024）" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-19" value="graph2（1024，1024）" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="270" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-20" value="t_sim_mx = self.fetch_temporal_sim()&lt;div&gt;（33，20，1024）&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-20" value="t_sim_mx = self.fetch_temporal_sim()&lt;div&gt;（33，20，1024）&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1030" y="270" width="230" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AWZAqQgQGWzGxksC17hS-21" value="view1(20,35,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="AWZAqQgQGWzGxksC17hS-21" value="view1(20,35,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1260" y="270" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-1" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="310" width="220" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="aug_traffic(t_sim_mx, view1, percent=self.args.percent)" id="AIZz5QbiwIYZJJjCRu4t-2">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="1220" y="350" width="330" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1209.5" y="340" as="sourcePoint" />
+            <mxPoint x="1209.5" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AIZz5QbiwIYZJJjCRu4t-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-4" value="view2（20，35，1024，2）" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="400" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="859.66" y="310" as="sourcePoint" />
+            <mxPoint x="860" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-8" value="self.encoder(view2, graph2)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="430" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-9" value="repr2（20，1，1024，64）" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="490" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-10" value="repr1 代表了输入数据 view1 和图结构 graph 的编码特征表示" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="170" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-11" value="repr2代表了经过数据增强后的交通流量数据 view2 和增强后的图结构 graph2 通过编码器 self.encoder 得到的特征表示" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="520" width="560" height="50" as="geometry" />
+        </mxCell>
+        <UserObject label="loss, sep_loss = self.model.loss(repr1, repr2, target, self.scaler, loss_weights)" id="AIZz5QbiwIYZJJjCRu4t-12">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="540" y="600" width="450" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-14" value="计算损失" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="515" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-15" value="target(20,1,1024,2)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="570" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-16" value="l1 = self.pred_loss(z1, z2, y_true, scaler)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="670" width="250" height="40" as="geometry" />
+        </mxCell>
+        <UserObject label="def pred_loss(self, z1, z2, y_true, scaler):&lt;br/&gt;&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;y_pred = scaler.inverse_transform(self.predict(z1, z2))&lt;br/&gt;&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;y_true = scaler.inverse_transform(y_true)&lt;br/&gt;&lt;br&gt; &lt;br/&gt;&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;loss = self.args.yita * self.mae(y_pred[..., 0], y_true[..., 0]) + \&lt;br/&gt;&lt;br&gt;                &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;(1 - self.args.yita) * self.mae(y_pred[..., 1], y_true[..., 1])&lt;br/&gt;&lt;br&gt;        return loss" id="AIZz5QbiwIYZJJjCRu4t-17">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="160" y="650" width="350" height="120" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-18" value="l2 = self.temporal_loss(z1, z2)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="670" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-19" value="l3 = self.spatial_loss(z1, z2)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="670" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-20" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="710" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="859.83" y="710" as="sourcePoint" />
+            <mxPoint x="859.83" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-22" value="loss_weights[0] * l1" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="534" y="730" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-23" value="loss_weights[1] * l2" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="720" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-24" value="loss_weights[2] * l3" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="720" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-25" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="859.8" y="780" as="sourcePoint" />
+            <mxPoint x="859.8" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-27" value="三种损失相加" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AIZz5QbiwIYZJJjCRu4t-25">
+          <mxGeometry x="-0.568" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AIZz5QbiwIYZJJjCRu4t-28" value="loss" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="830" y="830" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
