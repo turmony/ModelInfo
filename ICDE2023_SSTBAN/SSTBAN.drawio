@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-23T07:21:12.430Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="65lBfaR5p1uMX-vEYxNy" version="24.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-23T12:55:42.291Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="eMiV_TzGcntZx9IUJ0Oe" version="24.7.3" type="github">
   <diagram name="第 1 页" id="VAEvbOEpjss1O71dqnCe">
-    <mxGraphModel dx="1684" dy="1543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1280" dy="1411" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -483,8 +483,198 @@
         <mxCell id="6wLM4Py38m8FdbfmUGET-106" value="self.FC(X)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="1350" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="OVFNuFVIcAY5jxq3K5aE-1" value="X（4，24，307，1）" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="OVFNuFVIcAY5jxq3K5aE-1" value="X（4，24，307，1）" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1218" y="305" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-1" value="H = self.mab0(I, X, batch_size, &quot;spatial&quot;, mask)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="700" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-2" value="多头注意力mab0用于生成中间表示H" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2300" y="618" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-3" value="I(4,24,3,256)&lt;div&gt;3应该是参考点个数，可减少计算复杂度&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="730" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-4" value="X(4,24,307,256)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="764.5" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2289.8" y="801.5" as="sourcePoint" />
+            <mxPoint x="2289.8" y="851.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2419.8" y="800" as="sourcePoint" />
+            <mxPoint x="2419.8" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-11" value="Q(4,24,3,256)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="860" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-12" value="K(4,24,307,256)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="860" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2289.8" y="883.5" as="sourcePoint" />
+            <mxPoint x="2289.8" y="933.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-14" value="self.FC_q(Q)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="890" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2410" y="883.5" as="sourcePoint" />
+            <mxPoint x="2410" y="933.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-16" value="self.FC_k(K)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2410.2" y="890" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2540" y="880" as="sourcePoint" />
+            <mxPoint x="2540" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-18" value="self.FC_v(K)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2540.2" y="886.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2470" y="875" as="sourcePoint" />
+            <mxPoint x="2540" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-20" value="query(4,24,3,128)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="940" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-21" value="key(4,24,307,128)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2360" y="940" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-22" value="value(4,24,307,128)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2500" y="940" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2289.6" y="960" as="sourcePoint" />
+            <mxPoint x="2289.6" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="torch.cat(torch.split(query, self.K, dim=-1), dim=0)" id="yw52gwobQaY5EpZ5QW9B-24">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="2340.2" y="970" width="300" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-25" value="query(32,24,3,16)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="1010" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-26" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2409.6" y="963" as="sourcePoint" />
+            <mxPoint x="2409.6" y="1013" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-27" value="key(32,24,307,16)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2360" y="1013" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-28" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2549.6" y="960" as="sourcePoint" />
+            <mxPoint x="2549.6" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-29" value="value(32,24,307,16)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2500" y="1010" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-30" value="mask(4,24,307,128)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2520" y="750" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-31" value="mask(4,24,307,128)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2630" y="940" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2669.6" y="966.5" as="sourcePoint" />
+            <mxPoint x="2669.6" y="1016.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-33" value="mask(32,24,307,16)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2620" y="1016.5" width="100" height="37" as="geometry" />
+        </mxCell>
+        <UserObject label="elif mask.shape == key.shape:" id="yw52gwobQaY5EpZ5QW9B-34">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="2455" y="1047" width="190" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-35" value="set_mask(32,24,3,16)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2500" y="1070" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-37" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2669.8" y="1037" as="sourcePoint" />
+            <mxPoint x="2670" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-43" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2620" y="1087" as="sourcePoint" />
+            <mxPoint x="2670" y="1087" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-44" value="mask(32,24,3,307)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2630" y="1120" width="100" height="37" as="geometry" />
+        </mxCell>
+        <UserObject label="torch.matmul(set_mask, mask.transpose(2, 3))" id="yw52gwobQaY5EpZ5QW9B-45">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="2670" y="1070" width="280" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="attention = torch.matmul(query, key.transpose(2, 3))&lt;br&gt;            attention /= (self.d ** 0.5)&lt;br&gt;            attention = attention.masked_fill(mask == 0, -1e9)&lt;br&gt;            attention = F.softmax(attention, dim=-1)&lt;br&gt;            result = torch.matmul(attention, value)&lt;div&gt;计算注意力得分&lt;/div&gt;&lt;div&gt;缩放得分&lt;/div&gt;&lt;div&gt;应用mask&lt;/div&gt;&lt;div&gt;经过softmax&lt;/div&gt;&lt;div&gt;得到加权后的值&lt;/div&gt;" id="yw52gwobQaY5EpZ5QW9B-46">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="2350" y="1140" width="310" height="163" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-47" value="result(32,24,3,16)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2360" y="1310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-48" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2400" y="1330" as="sourcePoint" />
+            <mxPoint x="2400" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yw52gwobQaY5EpZ5QW9B-49" target="yw52gwobQaY5EpZ5QW9B-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-49" value="result(4,24,3,128)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2355" y="1390" width="100" height="40" as="geometry" />
+        </mxCell>
+        <UserObject label="torch.cat(torch.split(result, batch_size, dim=0), dim=-1)" id="yw52gwobQaY5EpZ5QW9B-50">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="2400" y="1350" width="320" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-51" value="self.FC(result)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="1420" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-52" value="result(4,24,3,256)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2355" y="1450" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-54" value="多头注意力mab1&lt;div&gt;&lt;span style=&quot;color: rgb(6, 6, 7); font-family: -apple-system, blinkmacsystemfont, &amp;quot;Helvetica Neue&amp;quot;, helvetica, &amp;quot;segoe ui&amp;quot;, arial, roboto, &amp;quot;PingFang SC&amp;quot;, miui, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft Yahei&amp;quot;, sans-serif; font-size: 14px; letter-spacing: 0.25px; text-align: start; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;输出 &lt;/span&gt;&lt;code style=&quot;box-sizing: inherit; max-width: 100%; overflow: auto; white-space-collapse: preserve; font-size: 14px; text-align: justify; color: rgb(6, 6, 7); background-color: rgb(255, 255, 255); margin: 0 var(--gap-xs); padding: var(--gap-xs) var(--gap-sm); border-radius: var(--border-radius-xs); letter-spacing: 0.25px; word-break: break-word !important;&quot; class=&quot;inlineCode___uUrJ9&quot;&gt;H&lt;/code&gt;&lt;span style=&quot;color: rgb(6, 6, 7); font-family: -apple-system, blinkmacsystemfont, &amp;quot;Helvetica Neue&amp;quot;, helvetica, &amp;quot;segoe ui&amp;quot;, arial, roboto, &amp;quot;PingFang SC&amp;quot;, miui, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft Yahei&amp;quot;, sans-serif; font-size: 14px; letter-spacing: 0.25px; text-align: start; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt; 和原始输入 &lt;/span&gt;&lt;code style=&quot;box-sizing: inherit; max-width: 100%; overflow: auto; white-space-collapse: preserve; font-size: 14px; text-align: justify; color: rgb(6, 6, 7); background-color: rgb(255, 255, 255); margin: 0 var(--gap-xs); padding: var(--gap-xs) var(--gap-sm); border-radius: var(--border-radius-xs); letter-spacing: 0.25px; word-break: break-word !important;&quot; class=&quot;inlineCode___uUrJ9&quot;&gt;X&lt;/code&gt;&lt;span style=&quot;color: rgb(6, 6, 7); font-family: -apple-system, blinkmacsystemfont, &amp;quot;Helvetica Neue&amp;quot;, helvetica, &amp;quot;segoe ui&amp;quot;, arial, roboto, &amp;quot;PingFang SC&amp;quot;, miui, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft Yahei&amp;quot;, sans-serif; font-size: 14px; letter-spacing: 0.25px; text-align: start; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt; 进一步细化注意力加权值&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2680" y="1390" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-55" value="self.mab1(X, H, batch_size, &quot;spatial&quot;, mask)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2625" y="1510" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-56" value="X(4,24,307,256)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2620" y="1560" width="100" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yw52gwobQaY5EpZ5QW9B-57" value="H(4,24,3,256)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2740" y="1557" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
