@@ -1,9 +1,100 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" version="24.7.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.8">
   <diagram name="第 1 页" id="mXpQyyNIwqcoPdnSYuN3">
-    <mxGraphModel>
+    <mxGraphModel dx="733" dy="309" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-1" value="inputs(16,307,12,3)&lt;div&gt;归一化后的流量，占用率，速度&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="270" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-3" value="his=12&lt;div&gt;pred=12&lt;/div&gt;&lt;div&gt;batch=16&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="140" width="120" height="80" as="geometry" />
+        </mxCell>
+        <UserObject label="for blk in self.sp_blocks:&lt;br/&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; outs.append(blk(x))" id="rav3Nn_RVj-ASamNuTSd-6">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="480" y="320" width="140" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-10" value="outs list(3)&lt;div&gt;(16,307,12,64)&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71" y="450" as="sourcePoint" />
+            <mxPoint x="449.71" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="for blk in self.se_blocks:&#xa;            outs.append(blk(x))" id="rav3Nn_RVj-ASamNuTSd-12">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="470" y="460" width="160" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-13" value="outs list(6)&lt;div&gt;(16,307,12,64)&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="530" width="100" height="40" as="geometry" />
+        </mxCell>
+        <UserObject label="torch.stack(outs)" id="rav3Nn_RVj-ASamNuTSd-14">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="470" y="580" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71" y="570" as="sourcePoint" />
+            <mxPoint x="449.71" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-16" value="outs&lt;div&gt;(6,16,307,12,64)&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="640" width="100" height="40" as="geometry" />
+        </mxCell>
+        <UserObject label="x = torch.max(outs, dim=0)[0]" id="rav3Nn_RVj-ASamNuTSd-17">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="470" y="700" width="190" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71" y="690" as="sourcePoint" />
+            <mxPoint x="449.71" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-19" value="&lt;div&gt;x(16,307,12,64)&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="770" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71" y="810" as="sourcePoint" />
+            <mxPoint x="449.71" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-21" value="x.reshape((x.shape[0], x.shape[1], -1))" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="810" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-22" value="&lt;div&gt;x(16,307,768)&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="870" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71" y="910" as="sourcePoint" />
+            <mxPoint x="449.71" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-24" value="self.pred(x)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="910" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rav3Nn_RVj-ASamNuTSd-25" value="&lt;div&gt;x(16,307,12)&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="960" width="100" height="40" as="geometry" />
+        </mxCell>
+        <UserObject label="可以被看作是一种特征选择或集成方法，它选择每个位置最“强”的特征（即最大值）。&lt;br&gt;降维：在堆叠维度上取最大值也是一种降维策略，它减少了数据的冗余，&lt;div&gt;尤其是在堆叠维度代表不同预测或不同特征集时。&lt;/div&gt;" id="rav3Nn_RVj-ASamNuTSd-26">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="490" y="720" width="470" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
