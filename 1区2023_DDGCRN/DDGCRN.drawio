@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.12">
   <diagram name="第 1 页" id="yApHzeJYYiuHWeru3HxS">
-    <mxGraphModel dx="1692" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="967" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -289,6 +289,63 @@
         </mxCell>
         <mxCell id="CCc3rt2gpf3KJTV6QmEU-1" value="label(10182,12,307,1)&lt;div&gt;flow&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="395" y="225" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-2" value="self.encoder1(source, init_state1, node_embeddings)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="810" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="840" as="sourcePoint" />
+            <mxPoint x="560" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-4" value="init_state1[0]" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="680" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="700" as="sourcePoint" />
+            <mxPoint x="370" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-6" value="state(64,607,64)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="740" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-7" value="(1,64,307,64)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="412.5" y="680" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-8" value="for t in range(seq_length):" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="900" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-9" value="state = self.DGCRM_cells[i](current_inputs[:, t, :, :], state, [node_embeddings[0][:, t, :, :], node_embeddings[1]])&lt;div&gt;(64,307,64)&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="920" width="630" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="inner_states.append(state)" id="CCc3rt2gpf3KJTV6QmEU-10">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="490" y="960" width="180" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-11" value="inner_states = []" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="880" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-12" value="output_hidden = []" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="860" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-13" value="current_inputs = x" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="840" width="130" height="40" as="geometry" />
+        </mxCell>
+        <UserObject label="output_hidden.append(state)" id="CCc3rt2gpf3KJTV6QmEU-14">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="420" y="980" width="190" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="current_inputs = torch.stack(inner_states, dim=1)" id="CCc3rt2gpf3KJTV6QmEU-15">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="420" y="1000" width="290" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="CCc3rt2gpf3KJTV6QmEU-16" value="return current_inputs, output_hidden" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="1030" width="230" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
