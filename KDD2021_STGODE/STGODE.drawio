@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.13">
   <diagram name="第 1 页" id="mXpQyyNIwqcoPdnSYuN3">
-    <mxGraphModel dx="326" dy="380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="778" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -95,52 +95,64 @@
             <mxGeometry x="490" y="720" width="470" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-1" value="self.sp_blocks = nn.ModuleList(&#xa;            [nn.Sequential(&#xa;                STGCNBlock(in_channels=num_features, out_channels=[64, 32, 64],&#xa;                num_nodes=num_nodes, A_hat=A_sp_hat),&#xa;                STGCNBlock(in_channels=64, out_channels=[64, 32, 64],&#xa;                num_nodes=num_nodes, A_hat=A_sp_hat)) for _ in range(3)&#xa;            ])" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-1" value="self.sp_blocks = nn.ModuleList( &#xa;            [nn.Sequential( &#xa;                STGCNBlock(in_channels=num_features, out_channels=[64, 32, 64], &#xa;                num_nodes=num_nodes, A_hat=A_sp_hat), &#xa;                STGCNBlock(in_channels=64, out_channels=[64, 32, 64], &#xa;                num_nodes=num_nodes, A_hat=A_sp_hat)) for _ in range(3) &#xa;            ])" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="630" y="290" width="400" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-2" value="STGCNBlock" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-2" value="STGCNBlock" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1220" y="180" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-3" value="X(16,307,12,3)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-3" value="X(16,307,12,3)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1210" y="230" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1264.76" y="250" as="sourcePoint" />
             <mxPoint x="1264.76" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-5" value="t(16,307,12,64)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-5" value="t(16,307,12,64)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1210" y="290" width="110" height="30" as="geometry" />
         </mxCell>
         <UserObject label="self.odeg(t)" id="wXepS07qD-WWCrW_Pm2a-6">
-          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-            <mxGeometry x="1290" y="260" width="90" height="40" as="geometry" />
+          <mxCell style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="1310" y="320" width="90" height="40" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-8" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1264.76" y="320" as="sourcePoint" />
             <mxPoint x="1264.76" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-9" value="t(16,307,12,64)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-9" value="t(16,307,12,64)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1210" y="360" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-10" value="self.temporal2(F.relu(t))" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1280" y="320" width="160" height="40" as="geometry" />
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-10" value="self.temporal2(F.relu(t))" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1290" y="390" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-11" value="self.batch_norm(t)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1280" y="390" width="130" height="40" as="geometry" />
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-11" value="self.batch_norm(t)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="480" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-12" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1264.76" y="390" as="sourcePoint" />
             <mxPoint x="1264.76" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wXepS07qD-WWCrW_Pm2a-13" value="t(16,307,12,64)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="wXepS07qD-WWCrW_Pm2a-13" value="t(16,307,12,64)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1210" y="430" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VI5UmRTNMQ0d3d748E1i-1" value="self.temporal1(X)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VI5UmRTNMQ0d3d748E1i-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1264.71" y="470" as="sourcePoint" />
+            <mxPoint x="1264.71" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VI5UmRTNMQ0d3d748E1i-3" value="t(16,307,12,64)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="520" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
